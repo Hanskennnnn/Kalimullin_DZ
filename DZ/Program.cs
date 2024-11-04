@@ -11,52 +11,141 @@ namespace ALMAZ
     {
         static void Main(string[] args)
         {
-            //Лабораторная работа. Задание 2.1.
-            Console.WriteLine("лабораторная 1");
-            Console.WriteLine("Как вас зовут?");
-            string name = Console.ReadLine();
-            Console.WriteLine($"Привет , {name}!");
-            //Лабораторная работа. Задание 2.2.
-            Console.WriteLine("лабораторная 2");
-            Console.WriteLine("Введите первое число: ");
-            int number1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("введите второе число: ");
-            int number2 = Convert.ToInt32(Console.ReadLine());
-            try
-            {
-                var answer = number1 / number2;
-                Console.WriteLine($"Результат деления: {answer}");
+            //Задание 1
+            Console.WriteLine("Задание 1");
+            Console.WriteLine("e = 2,7");
 
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Ошибка: деление на 0");
-            }
+            //Задание 2
+            Console.WriteLine("Задание 2");
+            Console.WriteLine(50);
+            Console.WriteLine(10);
 
-            //Домашняя работа. Задание 2.1.
-            Console.WriteLine("Домашняя 1");
-            char letter = Convert.ToChar(Console.ReadLine());
-            Console.WriteLine((char)(letter + 1));
-            //Домашняя работа. Задание 2.2.
-            Console.WriteLine("Домащняя 2");
-            int a, b, c;
+            //Задание 3
+            Console.WriteLine("Задание 3");
+            Console.WriteLine(1);
+            Console.WriteLine(2);
+            Console.WriteLine(3);
+            Console.WriteLine(4);
+
+
+
+            //Задание 4
+            Console.WriteLine("Задание 4");
+            Console.WriteLine("Введите число: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(a + 10);
+
+
+            //Задание 5
+            Console.WriteLine("Задание 5");
+            int b = 10;
+            b = b * 4;
+            Console.WriteLine($"Периметр квадрата равна {b}");
+
+
+
+            //Задание 6
+            Console.WriteLine("Задание 6");
+            Console.WriteLine("Введите радиус окружности: ");
+            float pi = 3.14f;
+            float r = Convert.ToSingle(Console.ReadLine());
+            float length = 2 * pi * r;
+            float space = pi * r * r;
+            Console.WriteLine($"Длина окружности - {length}, площадь окружности - {space}");
+
+
+            //Задание 7
+            Console.WriteLine("Задание 7");
+            Console.WriteLine("Введите x: ");
+            double x = Convert.ToDouble(Console.ReadLine());
+            double y = Math.Cos(x);
+            Console.WriteLine(y);
+
+
+            //Задание 8
+            Console.WriteLine("Задание 8");
+            Console.WriteLine("Введите длину основание a трапеции: ");
+            float osnov_a = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Введите длину основание b трапеции: ");
+            float osnov_b = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Введите высоту трапеции: ");
+            int h = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Периметр трапеции = " + h * ((osnov_a + osnov_b) / 2));
+
+            //Задание 9
+            Console.WriteLine("Задание 9");
+            Console.WriteLine("Стоимость 1 кг конфет - 200, печенья - 150 и яблок - 100");
+            int apple = 100;
+            int candy = 200;
+            int cake = 150;
+            Console.WriteLine("Введите кол-во конфет: ");
+            int x1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите кол-во печенья: ");
+            int y1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("введите кол-во яблок: ");
+            int z1 = Convert.ToInt32(Console.ReadLine());
+            int all = x1 * candy + y1 * cake + apple * z1;
+            Console.WriteLine($"Стоимость всей покупки: {all}");
+
+
+
+
+
+
+
+
+
+            //Задание 10
+            Console.WriteLine("Задание 10");
+            Console.WriteLine("Мир Труд Май");
+            Console.WriteLine("Мир \n Труд \n   Май");
+
+            //Задание 11
+            Console.WriteLine("Задание 11");
+
+
+            //Задание 12
+            Console.WriteLine("Задание 12");
+
+
+            //Задание 13
+            Console.WriteLine("Задание 13");
+
+            //Задание 14
+            Console.WriteLine("Задание 14");
+            Console.WriteLine("2 кг\n13 17");
+
+
+            //Задание 15
+            Console.WriteLine("Задание 15");
+            Console.WriteLine("Задание 3");
+            Random random = new Random();
+            Console.WriteLine(random.Next(1, 10));
+            Console.WriteLine(random.Next(1, 10));
+            Console.WriteLine(random.Next(1, 10));
+            Console.WriteLine(random.Next(1, 10));
+
+            //Задание 16
+            Console.WriteLine("Задание 16");
+            int a1, b1, c1;
             double D;
             Console.WriteLine("Введите коэфециент a: ");
-            a = Convert.ToInt32(Console.ReadLine());
+            a1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите коэфециент b: ");
-            b = Convert.ToInt32(Console.ReadLine());
+            b1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите коэфециент c: ");
-            c = Convert.ToInt32(Console.ReadLine());
-            D = (b * b) - (4 * a * c);
+            c1 = Convert.ToInt32(Console.ReadLine());
+            D = (b1 * b1) - (4 * a1 * c1);
             if (D == 0)
             {
-                int answer = (-1) * (b) / (2 * a);
+                int answer = (-1) * (b1) / (2 * a1);
                 Console.WriteLine($"Корень данного уравнения: {answer}");
             }
             else if (D > 0)
             {
-                int answer1 = (int)(((-1) * b) - Math.Sqrt(D) / (2 * a));
-                int answer2 = (int)((-1) * (b) + Math.Sqrt(D) / (2 * a));
+                int answer1 = (int)(((-1) * b1) - Math.Sqrt(D) / (2 * a1));
+                int answer2 = (int)((-1) * (b1) + Math.Sqrt(D) / (2 * a1));
                 Console.WriteLine($"Корни данного уравнения:{answer1} , {answer2}. ");
 
 
@@ -65,7 +154,6 @@ namespace ALMAZ
             {
                 Console.WriteLine("Данное уравнение не имеет корней.");
             }
-
 
         }
 
