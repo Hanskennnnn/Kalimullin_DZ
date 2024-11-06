@@ -105,9 +105,97 @@ namespace ALMAZ
             //Console.WriteLine("Задание 11");
 
 
-            ////Задание 12
-            //Console.WriteLine("Задание 12");
+            //Задание 12
+            Console.WriteLine("Задание 12");
+            Console.WriteLine("Введите фигуру: ");
+            Console.WriteLine("1 - круг");
+            Console.WriteLine("2 - четырехугольник");
+            Console.WriteLine("3 - треугольник");
+            string choose = Console.ReadLine();
+            if (choose == "1")
+            {
+                Console.WriteLine("Выберите , что требуется вычислить: ");
+                Console.WriteLine("1 - Площадь");
+                Console.WriteLine("2 - Периметр");
+                string choose2 = Console.ReadLine();
+                if (choose2 == "1")
+                {
+                    Console.WriteLine("Введите радиус окружности: ");
+                    int RRadius = Convert.ToInt32(Console.ReadLine());
+                    double answeRR3 = Math.PI * RRadius * RRadius;
+                    Console.WriteLine($"Площадь круга - {answeRR3}");
+                }
+                else if (choose2 == "2")
+                {
+                    Console.WriteLine("Введите радиус окружности: ");
+                    int RRadius = Convert.ToInt32(Console.ReadLine());
+                    double answeRR3 = 2 * Math.PI * RRadius;
+                    Console.WriteLine($"Длина круга - {answeRR3}");
+                }
 
+            }
+            else if (choose == "2")
+            {
+                Console.WriteLine("Выберите , что требуется вычислить: ");
+                Console.WriteLine("1 - Площадь");
+                Console.WriteLine("2 - Периметр");
+                string choose2 = Console.ReadLine();
+                if (choose2 == "1")
+                {
+                    Console.WriteLine("Введите через пробел все стороны четырёхугольника: ");
+                    string input = Console.ReadLine();
+
+                    string[] nums = input.Split(' ');
+                    double[] Nums2 = nums.Select(double.Parse).ToArray();
+                    double poluperimetr = Nums2.Sum() / 2;
+                    double answeRR3 = Math.Sqrt((poluperimetr - Nums2[0]) * (poluperimetr - Nums2[1]) * (poluperimetr - Nums2[2]) * (poluperimetr - Nums2[3]));
+                    Console.WriteLine($"Площадь четырехугольника: {answeRR3}");
+
+                }
+                else if (choose2 == "2")
+                {
+                    Console.WriteLine("Введите через пробел все стороны четырёхугольника: ");
+                    string input = Console.ReadLine();
+
+                    string[] nums = input.Split(' ');
+                    double[] Nums2 = nums.Select(double.Parse).ToArray();
+                    double poluperimetr = Nums2.Sum() ;
+                    Console.WriteLine($"Периметр четырёхугольника: {poluperimetr}");
+                }
+
+            }
+            else if (choose == "3")
+            {
+                Console.WriteLine("Выберите , что требуется вычислить: ");
+                Console.WriteLine("1 - Площадь");
+                Console.WriteLine("2 - Периметр");
+                string choose2 = Console.ReadLine();
+                if (choose2 == "1")
+                {
+                    Console.WriteLine("Введите через пробел все стороны треугольника: ");
+                    string input = Console.ReadLine();
+
+                    string[] nums = input.Split(' ');
+                    double[] Nums2 = nums.Select(double.Parse).ToArray();
+                    double poluperimetr = Nums2.Sum() / 2;
+                    double answeRR3 = Math.Sqrt((poluperimetr - Nums2[0])*(poluperimetr - Nums2[1])*(poluperimetr - Nums2[2]));
+                }
+                else if (choose2 == "2")
+                {
+                    Console.WriteLine("Введите через пробел все стороны треугольника: ");
+                    string input = Console.ReadLine();
+
+                    string[] nums = input.Split(' ');
+                    double[] Nums2 = nums.Select(double.Parse).ToArray();
+                    double poluperimetr = Nums2.Sum() ;
+                    Console.WriteLine($"Периметр треугольника: {poluperimetr}");
+                }
+                else
+                {
+                    Console.WriteLine("Введены неправильные данные.");
+                }
+
+            }
 
             ////Задание 13
             //Console.WriteLine("Задание 13");
@@ -228,8 +316,79 @@ namespace ALMAZ
             //Console.WriteLine($"Кол-во сотен: {sotni}\n Кол-во тысяч: {tysyachi}\n");
 
 
-            //Задание 24
-            Console.WriteLine("Задание 24");
+            ////Задание 24
+            //Console.WriteLine("Задание 24");
+
+
+            ////Задание 34
+            //Console.WriteLine("Задание 34");
+            //Console.WriteLine("Введите ваше имя");
+            //string nameRR = Console.ReadLine();
+            //Console.WriteLine(nameRR);
+
+
+            //Console.WriteLine("Введите ваше имя");
+            //Console.WriteLine($"Привет {nameRR}!");
+
+            ////Задание 32
+            //Console.WriteLine("Задание 32");
+
+            //Console.WriteLine("Введите первый элемент прогрессии");
+            //int a1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Введите второй элемент прогрессии");
+            //int a2 = Convert.ToInt32(Console.ReadLine());
+            //int dRR = a2 - a1;
+
+            //Console.WriteLine("Введите номер элемента прогрессии");
+            //int nnRR = Convert.ToInt32(Console.ReadLine());
+
+            //int answerr2 = a1 + (nnRR - 1) * dRR;
+            //Console.WriteLine(answerr2);
+
+            ////Задание 28
+            //Console.WriteLine("Задание 28");
+            //Console.WriteLine("Введите числа через пробел: ");
+            //string input1 = Console.ReadLine();
+            //string[] numbs = input1.Split(' ');
+            //double[] numbs2 = numbs.Select(double.Parse).ToArray();
+            //for (int i = 0; i<numbs.Length;i++)
+            //{
+            //    numbs2[i] = Math.Abs(numbs2[i]);
+            //}
+            //double mini1 = numbs2.Min();
+            //double maxi1 = numbs2.Max();
+            //Console.WriteLine($"Максимальное значение - {maxi1} , минимальное значение - {mini1}");
+            ////Задание 29
+            //Console.WriteLine("Задание 29");
+
+            //Console.WriteLine("Введите числа через пробел: ");
+            //string input = Console.ReadLine();
+
+            //string[] nums = input.Split(' ');
+            //int[] Nums2 = nums.Select(int.Parse).ToArray();
+
+            //int mini = Nums2.Min();
+            //int maxi = Nums2.Max();
+
+            //Console.WriteLine($"Минимальное число - {mini}, максимальное число - {maxi}");
+            ////Задание 30
+            //Console.WriteLine("Задание 30");
+            //Console.WriteLine("Введите число");
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //int counter = 0;
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    if (n % i == 0)
+            //    {
+            //        counter++;
+            //    }
+            //}
+            //Console.WriteLine(counter);
+
+            //Задание 35
+            Console.WriteLine("Задание 35");
+
+
 
 
 
